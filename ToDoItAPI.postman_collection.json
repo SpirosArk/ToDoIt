@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "5750a8e1-3347-4a19-9ef2-db454f5072be",
+		"name": "ToDoItAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3952073"
+	},
+	"item": [
+		{
+			"name": "GetTodos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\":\"test\",\r\n    \"isComplete\":\"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5260/api/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5260",
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCompleted",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "32"
+		},
+		{
+			"key": "localhost",
+			"value": "http://localhost:5260"
+		}
+	]
+}
