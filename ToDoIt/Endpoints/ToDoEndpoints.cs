@@ -71,9 +71,7 @@ namespace ToDoIt.Endpoints
                     return;
                 }
 
-                var inputTodo = await context.Request.ReadFromJsonAsync<Todo>();
-                todo.IsComplete = inputTodo.IsComplete;
-
+                todo.IsComplete = true;
                 await db.SaveChangesAsync();
 
                 context.Response.StatusCode = 204;
@@ -102,6 +100,5 @@ namespace ToDoIt.Endpoints
             }
 
         }
-
     }
 }
